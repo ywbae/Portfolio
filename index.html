@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yong-wan's Portfolio</title>
+    <title>YongWan's page</title>
     <meta name="description" content="Portfolio">
     <meta name="author" content="Yong-Wan">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/f69ad8f694.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
@@ -16,33 +16,36 @@
     <!-- Navbar-->
     <nav id="navbar">
       <div class="navbar__logo">
-        <i class="fab fa-angrycreative"></i>
-        <a href="#">Ellie</a>
+        <a href="#"><i class="fas fa-meteor"></i></a>
       </div>
       <div class="navbar_menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skill</li>
-          <li class="navbar__menu__item">Work</li>
-          <li class="navbar__menu__item">Testimonial</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skill</li>
+          <li class="navbar__menu__item" data-link="#work">Work</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+          <!-- Toggle button -->
+          <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+          </button>
         </ul>
       </div>
+
     </nav>
 
     <!-- Home -->
     <section id="home">
-      <img src="img/IMG_8B6557A292CD-1.jpeg" alt="ProfilePhoto" class="home__avatar">
-      <h1 class="home__title">Hello, <br /> I'm Yong-Wan</h1>
+      <img src="img/profile.png" alt="ProfilePhoto" class="home__avatar">
+      <!-- <h1 class="home__title">Hello, <br> I'm Yong-Wan</h1>
       <h2 class="home__description">Perfect Guy in Tokyo, Japan.</h2>
-      <button class="home__contact">Contact Me</button>
+      <button class="home__contact">Contact Me</button> -->
     </section>
 
     <!-- About -->
     <section id="about" class="section section__container">
       <h1>About me</h1>
-      <p>I worked at Broadcasting Company for 3 years, and now I am dreaming for becoming Junior Engineer.</p>
+      <p>I'm looking for new place.</p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
@@ -53,57 +56,44 @@
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fas fa-mobile"></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">HTML, CSS, JavaScript</div>
+          <h2 class="major__title">Mobile</h2>
+          <div class="major__description">Not yet</div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fas fa-server"></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">HTML, CSS, JavaScript</div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">Ruby, Ruby on Rails</div>
         </div>
       </div>
+
       <div class="about__jobs">
         <div class="job">
           <img 
-          src="img/jobs/Handdrawn Circle Logo.png" 
+          src="img/jobs/television.png" 
           alt="circlelogo" 
           class="job__logo">
           <div class="job__description">
             <p class="job__name">
-              Currently Working at No company
+              Worked at Broadcasting Company
             </p>
             <p class="job__period">
-              2 years 3 weaks
+              3 years ( 2017.4 ~ 2020.3)
             </p>
           </div>
         </div>
-        <div class="job">
-          <img 
-          src="img/jobs/Handdrawn Circle Logo.png" 
-          alt="circlelogo" 
-          class="job__logo">
-          <div class="job__description">
-            <p class="job__name">
-              Currently Working at No company
-            </p>
-            <p class="job__period">
-              2 years 3 weaks
-            </p>
-          </div>
-        </div>
-         
+      </div>
     </section>
+
     <!-- Skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section__container">
       <div class="section__container">
         <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
       <p>
-        Experience wiht all phases of the software Capable of working and independently. Ability to plan and time pressure and adapt quickly when needed.
+        今までやってきたことと、これから頑張ること
       </p>
       <div class="skillset">
         <div class="skillset__left">
@@ -138,161 +128,104 @@
             </div>
           </div>
 
+          <div class="skill">
+            <div class="skill__description">
+              <span>Ruby</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__description">
+              <span>Ruby on Rails</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 50%"></div>
+            </div>
+          </div>
+
         </div>
+
         <div class="skillset__right">
           <div class="tools">
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
               <li><span>Visual Studio Code</span></li>
-              <li><span>Intelij</span></li>
-              <li><span>Android Studio Code</span></li>
-              <li><span>iOS development tools</span></li>
-              <li><span>Sketch App</span></li>
+              <li><span>Sequel Pro</span></li>
             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">Etc</h3>
             <ul class="etc__list">
               <li><span>Git</span></li>
-              <li><span>Scrum</span></li>
               <li><span>Math</span></li>
             </ul>
           </div>
         </div>
       </div>
       </div>
-      
     </section>
+
     <!-- Work -->
-    <section id="work" class="section">
+    <section id="work" class="section section__container">
       <h1>My work</h1>
       <h3>Projects</h3>
-      <div class="work__categories">
+      <!-- <div class="work__categories">
         <button class="category__btn active">
-          All <span class="category__count">8</span>
+          All <span class="category__count">2</span>
         </button>
         <button class="category__btn">
-          Front-end <span class="category__count">4</span>
+          Front-end <span class="category__count">1</span>
         </button>
         <button class="category__btn">
-          Back-end <span class="category__count">3</span>
+          Back-end <span class="category__count">1</span>
         </button>
         <button class="category__btn">
-          Mobile <span class="category__count">1</span>
+          Mobile <span class="category__count">0</span>
         </button>
-      </div>
+      </div> -->
 
       <div class="work__projects">
         <a href="#" class="project" target="blank">
           <img 
-            src="img/projects/youtube.jpg" 
-            alt="Youtube"
-            class="project__img"
-          >
-          <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
-
-        <a href="#" class="project" target="blank">
-          <img 
-          src="img/projects/youtube.jpg" 
-          alt="Youtube"
-          class="project__img">
-          <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
-
-        <a href="#" class="project" target="blank">
-          <img 
-          src="img/projects/youtube.jpg" 
-          alt="Youtube"
-          class="project__img">
-          <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
-
-        <a href="#" class="project" target="blank">
-          <img 
-          src="img/projects/youtube.jpg" 
-          alt="Youtube"
-          class="project__img">
-          <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
-
-        <a href="#" class="project" target="blank">
-          <img 
-          src="img/projects/youtube.jpg" 
-          alt="Youtube"
-          class="project__img">
-          <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
-
-        <a href="#" class="project" target="blank">
-          <img 
-            src="img/projects/youtube.jpg" 
-            alt="Youtube"
+            src="img/projects/furima.png" 
+            alt="Furima"
             class="project__img">
           <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
+            <h3>フリマ Webアプリ</h3>
+            <span>TECH:CAMP 最終課題</span>
+          </div>
+        </a>
+
+        <a href="#" class="project" target="blank">
+          <img 
+            src="img/projects/furima.png" 
+            alt="Furima"
+            class="project__img">
+          <div class="project__description">
+            <h3>オリジナルアプリ</h3>
+            <span>TECH:CAMP 最終課題</span>
           </div>
         </a>
       </div>
     </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testimonials">
 
-        <div class="testimonial">
-          <img 
-          src="img/testimonial/person1.jpeg" 
-          alt="People" 
-          class="testimonial__avatar">
-          <div class="testimonial__speech-bubble">
-            <p>He is good man, so kind, I really want him with working.</p>
-            <p class="name"><a href="">Ellie</a></p>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial__speech-bubble">
-            <p>He is good man, so kind, I really want him with working.</p>
-            <p class="name"><a href="">Ellie</a></p>
-          </div>
-          <img 
-          src="img/testimonial/person1.jpeg" 
-          alt="People" 
-          class="testimonial__avatar">
-        </div>
-
-      </div>
-    </section>
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
+      <h1 class="contact__title">Contact</h1>
       <h2 class="contact__email">yonwan.b@gmail.com</h2>
       <div class="contact__links">
         <a href="#" target="_blank">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-youtube"></i>
         </a>
       </div>
       <p class="contact__rights">
-        2020 Yong-Wan Portfolio - All rights reserved
+        2020, YongWan's Portfolio - All rights reserved
       </p>
     </section>
   </body>
